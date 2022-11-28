@@ -1,0 +1,27 @@
+/* .bungkus {
+    background-color: aqua;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 1em;
+    text-align: center;
+}
+img {
+    border: 5px solid black;
+    width: 200px;
+    height: auto;
+    border-radius: 1em;
+    margin: 5px;
+}  */
+
+.bungkus {
+    background-color: aqua;
+    border: 3px solid black;
+    border-radius: 1em;
+    text-align: center;
+}
+img {
+    width: 20%;
+    margin: 10px 25px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
