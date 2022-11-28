@@ -1,0 +1,69 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #0b486b;
+}
+.atas {
+    background-color: #a8dba8;
+    border: 3px solid black;
+    border-radius: 1em;
+}
+#header {
+    background-color: #cff09e;
+    text-align: center;
+    padding: 5px;
+    border: 3px solid #0b486b;
+    border-radius: 1em;
+}
+#soekarno {
+    font-style: italic;
+}
+blockquote {
+    background-color: #0b486b;
+    color: white;
+    padding: 5px;
+    border: 5px solid #a8dba8;
+    border-radius: 1em;
+}
+.ngvn {
+    text-align: center;
+    padding: 10px;
+}
+.gambar {
+    padding-right: 10px;
+    float: left;
+}
+.isi {
+    text-align: justify;
+}
+.jawa {
+    font-size: 4.5em;
+}
+.bawah {
+    border: 3px solid black;
+    border-radius: 1em;
+    border-top: none;
+    width: max-content;
+    margin: auto;
+    background-color: #a8dba8;
+}
+.tawaran {
+    background-color: #cff09e;
+    padding: 5px;
+    border: 2px solid #0b486b;
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+}
+.koleksi {
+    text-align: center;
+}
+.sosmed {
+    background-color:  #a7dbd8;
+    padding: 5px;
+    border: 2px solid #000000;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-top: none;
+}
+.promo {
+    text-align: center;
+}
