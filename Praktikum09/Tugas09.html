@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Java Sripct</title>
+  </head>
+  <body style="text-align: center">
+    <h2>Menghitung Jumlah Dua Bilangan</h2>
+    <form name="x1">
+      <input type="number" name="FristNumber" onchange="penjumlahan()" placeholder="Masukan Angka Pertama" />
+      <br />
+      <span>+</span>
+      <br />
+      <input type="number" name="SecondNumber" onchange="penjumlahan()" placeholder="Masukan Angka kedua" />
+      <br />
+      <span>=</span>
+      <br />
+      <input type="number" name="total" placeholder="Total" />
+    </form>
+  </body>
+  <script>
+    function penjumlahan() {
+      let number1 = parseInt(x1.FristNumber.value);
+      let number2 = parseInt(x1.SecondNumber.value);
+      let total = number1 + number2;
+
+      x1.total.value = total;
+    }
+  </script>
+</html>
