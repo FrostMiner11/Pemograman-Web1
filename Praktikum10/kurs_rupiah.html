@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kurs Rupiah</title>
+    <link rel="stylesheet" href="css/style2.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <ul>
+          <li><a href="login.html">Nomor 1</a></li>
+          <li><a href="kurs_rupiah.html">Nomor 2</a></li>
+          <li><a href="chat_massage.html">Nomor 3</a></li>
+          <li><a href="img_piscker.html">Nomor 4</a></li>
+          <li><a href="formValidasi.html">Nomor 5</a></li>
+        </ul>
+    </div>
+    </nav>
+    <fieldset>
+      <legend>Kurs Rupiah - Mata Uang Asing</legend>
+      <table border="1">
+        <thead>
+          <th>Masukkan Nilai</th>
+          <th for="valas">Valas</th>
+          <th>Nilai Rupiah</th>
+        </thead>
+        <tbody>
+          <td><input type="number" placeholder="0" id="satuan" onchange="NilaiMataUang()" /></td>
+          <td>
+            <select name="" id="valas" onchange="NilaiMatauang()">
+              <option value="pilih">--Pilih--</option>
+              <option value="dollarUs">Dollar US (USD)</option>
+              <option value="dollarSg">Dollar SG (SGD)</option>
+              <option value="ringgitSm">Ringgit Malaysia (RM)</option>
+              <option value="yenJpn">Yen Jepang (JPY)</option>
+              <option value="Euro">Euro (EUR)</option>
+              <option value="riyalAs">Riyal Arab Saudi (SAR)</option>
+            </select>
+          </td>
+          <td><input type="text" disabled id="hasil" placeholder="0" /></td>
+        </tbody>
+      </table>
+    </fieldset>
+
+    <!-- Sricpt JS -->
+    <script>
+      function NilaiMatauang() {
+        let satuan = document.getElementById("satuan").value;
+        let dropdown = document.getElementById("valas").value;
+        let dollarUs = 9.915;
+        let dollarSg = 13.472;
+        let ringgitRm = 874;
+        let yenJpn = 120;
+        let Euro = 15.888;
+        let riyalAs = 3.592;
+
+        if (dropdown == "dollarUs") {
+          let hasil = satuan * dollarUs;
+          document.getElementById("hasil").value = "Rp." + hasil.toFixed(3);
+        } else if (dropdown == "dollarSg") {
+          let hasil = satuan * dollarSg;
+          document.getElementById("hasil").value = "Rp." + hasil.toFixed(3);
+        } else if (dropdown == "ringgit") {
+          let hasil = satuan * ringgitRm;
+          document.getElementById("hasil").value = "Rp." + hasil.toFixed(0);
+        } else if (dropdown == "yenJpn") {
+          let hasil = satuan * yenJpn;
+          document.getElementById("hasil").value = "Rp." + hasil;
+        } else if (dropdown == "Euro") {
+          let hasil = satuan * Euro;
+          document.getElementById("hasil").value = "Rp." + hasil.toFixed(3);
+        } else if (dropdown == "riyalAs") {
+          let hasil = satuan * riyalAs;
+          document.getElementById("hasil").value = "Rp." + hasil.toFixed(3);
+        } else {
+          dropdown == "pilih";
+          alert("Pilih Nilai Mata Uang Terlebih Dahulu");
+        }
+      }
+    </script>
+  </body>
+</html>

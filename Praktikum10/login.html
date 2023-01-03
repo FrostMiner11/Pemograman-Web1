@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style1.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <ul>
+          <li><a href="login.html">Nomor 1</a></li>
+          <li><a href="kurs_rupiah.html">Nomor 2</a></li>
+          <li><a href="chat_massage.html">Nomor 3</a></li>
+          <li><a href="img_piscker.html">Nomor 4</a></li>
+          <li><a href="formValidasi.html">Nomor 5</a></li>
+        </ul>
+    </div>
+    </nav>
+    <div class="container">
+      <div class="main">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Input Username" />
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Input Password" />
+        <br />
+        <button type="button" onclick="login()">Login</button>
+      </div>
+    </div>
+
+    <script>
+      function login() {
+        let Uname = document.getElementById("username").value;
+        let Pw = document.getElementById("password").value;
+
+        if (Uname == "name2004" && Pw == "novelty") {
+          alert("Login Succeed");
+          location.href = "login_succees.html";
+        } else {
+          alert("Login Fail");
+        }
+      }
+    </script>
+  </body>
+</html>
