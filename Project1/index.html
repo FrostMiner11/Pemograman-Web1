@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Water Splash</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="icon" href="/images/Logo.jpg"/>
+  </head>
+  <body id="back">
+    <header>
+      <!-- Navabr -->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark shadow-sm" style="background-color: royalblue; font-family: 'Times New Roman', Times, serif">
+        <div class="container-fluid ps-4">
+          <img src="images/Logo.jpg" alt="Logo The Jungle" width="40px" class="rounded-circle" />
+          <a class="navbar-brand ps-2" href="#">Water Splash</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse me-5" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tentang_kami">Tentang Kami</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#wahana">Wahana</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#fasilitas">Fasilitas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#promo">Promo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#informasi">Informasi</a>
+              </li>
+            </ul>
+            <form class="d-flex ms-4" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Akhir Navbar -->
+    </header>
+    <div class="container-fluid" style="height: 100vh">
+      <!-- awal carosel images -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/Kolam Ombak.png" class="d-block w-100" alt="Kolam Ombak" style="height: 550px" />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/Kolam Arus.png" class="d-block w-100" alt="Kolam Arus" style="height: 550px" />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/Spalsh & Fun.png" class="d-block w-100" alt="Kolam Anak" style="height: 550px" />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/Super Bowl Slide.png" class="d-block w-100" alt="Super Bowl" style="height: 550px" />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/Gorila Slide.jpg" class="d-block w-100" alt="Gorila Slide" style="height: 550px" />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- akhir carosel images -->
+
+      <!-- awal artikel -->
+      <article id="articel">
+        <div class="container-fluid" id="tentang_kami">
+          <div class="row text-center">
+            <div class="col-sm">
+              <iframe src="https://www.youtube.com/embed/8QB8alp9su4" title="Water Splash" class="col-sm-4 embed-responsive-item" height="300"></iframe>
+              <h3 class="mb-2">Water Splash</h3>
+              <p>
+                Water Splash merupakan salah satu wahana rekreasi air terbesar di jawa barat. Water Splash berdiri di atas lahan seluas +- 3 Ha. Sejak resmi beroperasi pada juni 2014, Water Splash yang hadir dengan konsep desain ornament
+                negeri ajaib, terus mengembangkan diri menyajikan petualangan-petualangan seru dan wisata air modern untuk para pengunjung. Aneka permainan air dihadirkan untuk keluarga, seperti volcano wave, adventure river, Niagara falls,
+                gorilla slide, funny pool serta kiddy pool.
+                <br /><br />
+                Water Splash juga menyediakan fasilitas penunjang seperti Trampoline, High rope dan fliying fox.
+                <br /><br />
+                Bagi masyarakat Jawa Barat, Water Splash adalah salah satu alternative tempat untuk sejenak melarikan diri dari rutinitas dan kesibukan sehari-hari.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- akhir artikel -->
+
+      <!-- awal konten -->
+      <section id="wahana">
+        <div class="container">
+          <div class="row text-center mb-2">
+            <div class="col">
+              <h4 class="mt-3" id="judul">Wahana</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 mb-3">
+              <div class="card">
+                <img src="images/Kolam Ombak.png" class="card-img-top" alt="kolam ombak" />
+                <div class="card-body">
+                  <h6>Kolam Ombak</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 mb-3">
+              <div class="card">
+                <img src="images/Gorila Slide.jpg" class="card-img-top" alt="gorila slide" />
+                <div class="card-body">
+                  <h6>Gorila Slide</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 mb-3">
+              <div class="card">
+                <img src="images/Kolam Arus.png" class="card-img-top" alt="kolam arus" />
+                <div class="card-body">
+                  <h6>Kolam Arus</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 mb-3">
+              <div class="card">
+                <img src="images/Mandi Busa.png" class="card-img-top" alt="kolam mandi busa" />
+                <div class="card-body">
+                  <h6>Kolam Mandi Busa</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 mb-3">
+              <div class="card">
+                <img src="images/Spalsh & Fun.png" class="card-img-top" alt="kolam anak-anak" />
+                <div class="card-body">
+                  <h6>Splash and Fun</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 mb-3">
+              <div class="card">
+                <img src="images/Super Bowl Slide.png" class="card-img-top" alt="super bowl slide" />
+                <div class="card-body">
+                  <h6>Super Bowl Slide</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- akhir konten -->
+
+      <!-- awal fasilitas -->
+      <div class="container-fluid" id="fasilitas">
+        <div class="row text-center pt-2">
+          <div class="col">
+            <h4 id="judul">Fasilitas</h4>
+          </div>
+        </div>
+        <div class="row align-items-center mt-3">
+          <div class="col-sm-7">
+            <h4>Gazebo</h4>
+            <h6>Gazebo dan cabana adalah salah satu tempat untuk bekumpul dan dapat di sewa oleh semua pengunjung wonderland. selain itu ada juga loker khusus untuk menyimpan barang2 selagi berenang.</h6>
+          </div>
+          <div class="col-sm-3">
+            <img src="images/Gazebo.png" alt="gazebo" height="200px" />
+          </div>
+        </div>
+        <hr class="mt-4" />
+        <div class="row align-items-center mt-2">
+          <div class="col-sm-3">
+            <img src="images/Foodcourt.jpg" alt="foodcourt" height="200px" />
+          </div>
+          <div class="col-sm-7">
+            <h4>Foodcourt</h4>
+            <h6>Tidak usah risau dengan makanan dan minuman, karena di wonderland sudah ada banyak jajanan dan makanan di area foodcourt. karena banyak tenant jajanan dan makanan di wonderland</h6>
+          </div>
+        </div>
+        <hr class="mt-4" />
+        <div class="row align-items-center mt-2">
+          <div class="col-sm-7">
+            <h4>Tempat Fitnes</h4>
+            <h6>
+              Club House merupakan fasilitas yang dihadirkan Galuh Mas untuk memenuhi kebutuhan berolahraga, khususnya olahraga fitness dan senam. Tempat ini akan menjadi lokasi favorit bagi penghuni Galuh Mas untuk menjaga kebugaran
+              tubuhnya. Disini, Anda akan dipandu oleh staff Club House berpengalaman bagaimana cara menggunakan peralatan dan perlengkapan yang ada, sehingga bisa mendapatkan hasil yang maksimal.
+            </h6>
+          </div>
+          <div class="col-sm-5">
+            <img src="images/Tempat Fitnes.jpg" alt="tempat fitnes" height="200px" />
+          </div>
+        </div>
+        <hr />
+        <div class="row align-items-center mt-3">
+          <div class="col-sm-4">
+            <img src="images/Flying fox & Outbond.jpg" alt="Outbond" height="200px" />
+          </div>
+          <div class="col-sm-7">
+            <h4>Flying fox & Outbond</h4>
+            <h6>Nikmati wahana outbond, fliyng fox dan jaring laba-laba. sebagai ajang rekreasi sekaligus Menumbuhkan kepercayaan diri anak serta melatih motorik anak</h6>
+          </div>
+        </div>
+        <hr />
+        <div class="row align-items-center mt-3">
+          <div class="col-sm-7">
+            <h4>Penyewaan Ban</h4>
+            <h6>Tersedia penyewaan ban di wonderland. ada 2 tipe ban single dan double. Untuk pelajar terdapat harga pelajar dengan menunjukan kartu pelajar.</h6>
+          </div>
+          <div class="col-sm-5">
+            <img src="images/Sewa Ban.jpg" alt="Sewa ban" height="200px" style="margin-bottom: 10px" />
+          </div>
+        </div>
+      </div>
+      <!-- akhir fasilitas -->
+
+      <!-- awal promo -->
+      <div class="container text-center" id="promo">
+        <div class="row align-items-start">
+          <div class="col-sm-12">
+            <img src="images/Promo.jpg" alt="" width="300px" class="mt-2" />
+            <h4>Promo</h4>
+            <p class="mt-2">
+              <br />
+              ✅ PROMO NO MAT November Hemat 📌 Senin s/d Jumat 30rb/orang 📌 Tanpa syarat 📌 Berlaku mulai tgl 14 s/d 15 Nov 2022 dan 21 s/d 25 Nov 2022 (khusus tgl 16,17 dan 18 November tidak berlaku) ✅ *Ladies day (khusus perempuan
+              setiap hari Jumat 25rb/orang* 📌 Laki-laki harga normal 40rb/org 📌 Tidak berlaku tgl merah, libur nasional dan highseason 📌 Anak Usia dibawah 2 Tahun Gratiss 📌 *Pembelian Tiket bisa langsung di Loket* Anak usia dibawah 2
+              tahun Gratisss. ✓Pembelian tiket bisa langsung di Loket/via web resmi wonderland ✓Anak usia 2 tahun keatas sudah dikenakan tiket full Info lebih lanjut WA ke no 0812-9650-8138P Terimakasih 🙏 HTM tidak termasuk penyewaaan
+              gazebo, loker & ban
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- akhir promo -->
+
+      <!-- awal Pemesanan -->
+      <div id="informasi">
+        <div class="container" id="from">
+          <h4>Pemesanan Tiket Online</h4>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+              <div id="emailHelp" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+              <label for="pesan" class="form-label">Total Tiket</label>
+              <input type="number" class="form-control" id="pesan" />
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+      <!-- akhir pemesanan -->
+      <footer id="footer" class="mt-2">
+        <ul>
+          <li>Created By</li>
+          <li>
+            <a href="https://instagram.com/yudi_walyddn?igshid=YmMyMTA2M2Y=" target="_blank"><i class="bi bi-instagram"></i></a>
+          </li>
+          <li>Yudi Waliyuddin</li>
+        </ul>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
